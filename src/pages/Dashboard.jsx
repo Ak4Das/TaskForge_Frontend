@@ -65,8 +65,8 @@ export default function Dashboard() {
 
         if (user) {
           const taskEndpoint = currentStatusFilter
-            ? `http://localhost:3000/api/tasks?owner=${user.id}&status=${encodeURIComponent(currentStatusFilter)}`
-            : `http://localhost:3000/api/tasks?owner=${user.id}`
+            ? `https://workasana-backend-delta.vercel.app/api/tasks?owner=${user.id}&status=${encodeURIComponent(currentStatusFilter)}`
+            : `https://workasana-backend-delta.vercel.app/api/tasks?owner=${user.id}`
 
           await fetchTasks({
             taskEndpoint,

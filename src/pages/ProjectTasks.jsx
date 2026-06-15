@@ -60,33 +60,33 @@ export default function ProjectTasks() {
         ? owner
           ? tag
             ? prioritySortOrder
-              ? `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&owner=${owner}&tags=${tag}&priorityOrder=${prioritySortOrder}`
-              : `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&owner=${owner}&tags=${tag}`
+              ? `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&owner=${owner}&tags=${tag}&priorityOrder=${prioritySortOrder}`
+              : `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&owner=${owner}&tags=${tag}`
             : prioritySortOrder
-              ? `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&owner=${owner}&priorityOrder=${prioritySortOrder}`
-              : `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&owner=${owner}`
+              ? `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&owner=${owner}&priorityOrder=${prioritySortOrder}`
+              : `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&owner=${owner}`
           : tag
             ? prioritySortOrder
-              ? `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&tags=${tag}&priorityOrder=${prioritySortOrder}`
-              : `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&tags=${tag}`
+              ? `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&tags=${tag}&priorityOrder=${prioritySortOrder}`
+              : `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&tags=${tag}`
             : prioritySortOrder
-              ? `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&priorityOrder=${prioritySortOrder}`
-              : `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}`
+              ? `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}&priorityOrder=${prioritySortOrder}`
+              : `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&status=${encodeURIComponent(currentStatusFilter)}`
         : owner
           ? tag
             ? prioritySortOrder
-              ? `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&owner=${owner}&tags=${tag}&priorityOrder=${prioritySortOrder}`
-              : `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&owner=${owner}&tags=${tag}`
+              ? `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&owner=${owner}&tags=${tag}&priorityOrder=${prioritySortOrder}`
+              : `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&owner=${owner}&tags=${tag}`
             : prioritySortOrder
-              ? `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&owner=${owner}&priorityOrder=${prioritySortOrder}`
-              : `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&owner=${owner}`
+              ? `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&owner=${owner}&priorityOrder=${prioritySortOrder}`
+              : `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&owner=${owner}`
           : tag
             ? prioritySortOrder
-              ? `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&tags=${tag}&priorityOrder=${prioritySortOrder}`
-              : `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&tags=${tag}`
+              ? `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&tags=${tag}&priorityOrder=${prioritySortOrder}`
+              : `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&tags=${tag}`
             : prioritySortOrder
-              ? `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}&priorityOrder=${prioritySortOrder}`
-              : `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}`
+              ? `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}&priorityOrder=${prioritySortOrder}`
+              : `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}`
 
       await fetchTasks({
         taskEndpoint,
@@ -441,7 +441,7 @@ export default function ProjectTasks() {
                 } else if (e.target.value === "lowToHigh") {
                   sortDueDateByAscOrder()
                 } else {
-                  const taskEndpoint = `https://workasana-backend-delta.vercel.app/api/tasks?project=${projectId}`
+                  const taskEndpoint = `https://workasana-backend-zeta.vercel.app/api/tasks?project=${projectId}`
                   fetchTasks({
                     taskEndpoint,
                     setFunction: setTasks,
